@@ -1,0 +1,35 @@
+This is an outline of the database schema:
+Book:
+    -Title        : Introduction to Algorithms
+    -Author       : CLRS
+    -Editon       : 2nd
+    -ISBN         : xxx-xxxx-xxxx
+    -Publisher    : MIT Press
+    -Publish date : 12/03/2001
+    -Description  :
+    -Pictures     : intro-algo.jpg
+    -Price        :
+    -Rating       :
+    -Courses      : (one to many field)
+    -Category     : algorithms, math,...  (tags or categories)
+
+Category:
+    -Name: Math
+    -ParentCategory: Science
+
+Course:
+    -Name:
+    -Department:
+    -Term:
+    -Number:
+
+Member:
+    -First name
+    -Last name
+    -Email
+    -Password
+    -Permissions
+    -Address
+    -Telephone
+    -Books(one to many field)
+
