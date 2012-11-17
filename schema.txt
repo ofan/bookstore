@@ -21,7 +21,6 @@ Course:
     -Name:
     -Department:
     -Term:
-    -Number:
 
 Member:
     -First name
