@@ -18,7 +18,7 @@ class Book(models.Model):
     editor     = models.CharField(max_length  = 10)
     isbn       = models.CharField(max_length  = 100)
     publisher  = models.CharField(max_length  = 100)
-    pubishDate = models.DateField()
+    publishDate = models.DateField()
     description= models.TextField()
     image      = models.ImageField(upload_to = "images/%Y/%m/%d")
     course     = models.ForeignKey(Course)
@@ -36,7 +36,6 @@ class Member(models.Model):
     password  = models.CharField(max_length  = 200)
     address   = models.CharField(max_length  = 400)
     telephone = models.CharField(max_length  = 100)
-    books     = models.ManyToManyField(Book)
 
 class Listing(models.Model):
     def __unicode__(self):
