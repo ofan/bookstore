@@ -11,7 +11,7 @@ class Course(models.Model):
 
 class Book(models.Model):
     def __unicode__(self):
-        return self.name
+        return self.title
 # Fields
     #bid        = models.AutoField(primary_key = True)
     owner      = models.ForeignKey('member.Member')
