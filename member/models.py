@@ -13,4 +13,5 @@ class Member(models.Model):
     password  = models.CharField(max_length  = 200)
     address   = models.CharField(max_length  = 400)
     telephone = models.CharField(max_length  = 100)
+    books     = models.ManyToManyField('book.Book')
 

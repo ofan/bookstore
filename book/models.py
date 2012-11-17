@@ -1,5 +1,4 @@
 from django.db import models
-from member.models import Member
 
 class Course(models.Model):
     def __unicode__(self):
@@ -15,7 +14,7 @@ class Book(models.Model):
         return self.name
 # Fields
     #bid        = models.AutoField(primary_key = True)
-    owner      = models.ForeignKey(Member)
+    owner      = models.ForeignKey('member.Member')
     title      = models.CharField(max_length  = 300)
     author     = models.CharField(max_length  = 100)
     editor     = models.CharField(max_length  = 10)
