@@ -6,8 +6,11 @@ from django.conf.urls import patterns, include, url
 
 urlpatterns = patterns('',
     # Examples:
-    # url(r'^$', 'bookstore.views.home', name='home'),
-    # url(r'^bookstore/', include('bookstore.foo.urls')),
+     url(r'^$', 'bookstore.views.home', name='home'),
+	 url(r'^mainpage$', 'bookstore.views.mainpage', name='mainpage'),
+   	 url(r'^login$' , 'bookstore.views.login' , name='login'),
+	 url(r'^signup$' , 'bookstore.views.signup', name='signup')
+	# url(r'^bookstore/', include('bookstore.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
